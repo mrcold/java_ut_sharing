@@ -1,0 +1,15 @@
+<suite name="Parameterized Suite" >
+    <test name="Parameterized Test" >
+        <parameter name="first-name"  value="Cedric"/>
+        <classes>
+            <class name="parameter.ParameterizedTest" />
+        </classes>
+    </test>
+
+    <test name="Parameterized Test2" >
+        <parameter name="first-name"  value="Cedric1"/>
+        <classes>
+            <class name="parameter.ParameterizedTest" />
+        </classes>
+    </test>
+</suite>

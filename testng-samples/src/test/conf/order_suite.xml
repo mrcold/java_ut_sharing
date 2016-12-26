@@ -1,0 +1,18 @@
+<suite name="Order Suite" >
+    <test name="Group Test" >
+        <groups>
+            <run>
+                <include name="functest"/>
+                <include name="checkintest"/>
+                <include name="linux.*"/>
+            </run>
+            <dependencies>
+                <group name="functest" depends-on="linux.* windows.*" />
+                <group name="checkintest" depends-on="linux.* windows.*" />
+            </dependencies>
+        </groups>
+        <classes>
+            <class name="group.GroupTest" />
+        </classes>
+    </test>
+</suite>

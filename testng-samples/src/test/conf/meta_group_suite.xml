@@ -1,0 +1,22 @@
+<suite name="Meta Group Suite" >
+    <test name="Meta Group Test" >
+        <groups>
+            <define name="functest">
+                <include name="windows.*"/>
+                <include name="linux.*"/>
+            </define>
+
+            <define name="all">
+                <include name="functest"/>
+                <include name="checkintest"/>
+            </define>
+
+            <run>
+                <include name="all"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="group.GroupTest" />
+        </classes>
+    </test>
+</suite>

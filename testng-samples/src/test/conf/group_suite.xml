@@ -1,0 +1,14 @@
+<suite name="Group Suite" >
+    <groups>
+        <run>
+            <include name="functest"/>
+            <include name="checkintest"/>
+            <include name="linux.*"/>
+        </run>
+    </groups>
+    <test name="Group Test" >
+        <classes>
+            <class name="group.GroupTest" />
+        </classes>
+    </test>
+</suite>
