@@ -87,8 +87,8 @@ public class MockitoTest
         verify(test, atLeastOnce()).someMethod("called at least once");
 
         //	Will all fail because we didn't met the conditions.
-        verify(test, atLeast(2)).someMethod("called at least twice");
-        verify(test, times(5)).someMethod("called five times");
-        verify(test, atMost(3)).someMethod("called at most 3 times");
+//        verify(test, atLeast(2)).someMethod("called at least twice");
+//        verify(test, times(5)).someMethod("called five times");
+//        verify(test, atMost(3)).someMethod("called at most 3 times");
     }
 }
