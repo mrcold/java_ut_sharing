@@ -24,11 +24,13 @@ public class TheoryTest
         Assume.assumeTrue(a > 0 && b > 0);
         assertTrue(a + b > a);
         assertTrue(a + b > b);
+        System.out.printf("%s %s\n", a, b);
     }
 
     @Theory
     public void addition_is_commutative(Integer a, Integer b)
     {
         assertTrue(a + b == b + a);
+        System.out.printf("%s %s\n", a, b);
     }
 }
